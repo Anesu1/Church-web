@@ -1,0 +1,1809 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.banner {
+  background: -webkit-gradient(linear, left top, right top, from(#600C8F), to(#370C79));
+  background: linear-gradient(to right, #600C8F, #370C79);
+  padding: 0 3% 3% 3%;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .banner-inner {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.banner .banner-inner .top-text {
+  font: normal normal 600 39px/65px "Panton semibold";
+}
+
+.banner .banner-inner h1 {
+  color: white;
+  margin-bottom: 3rem;
+  font-family: "Panton semibold";
+  font: normal normal 600 24px/39px "Panton semibold";
+  line-height: 1.3;
+}
+
+.banner .banner-inner img {
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 3;
+}
+
+.banner .banner-inner .tr-img {
+  position: absolute;
+  height: 224px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -17px);
+          transform: translate(-50%, -17px);
+  z-index: 1;
+}
+
+.banner .banner-inner .bottom {
+  display: none;
+}
+
+.banner .banner-inner p {
+  color: #D3D3D3;
+  font: normal normal normal 21px/29px "Panton regular";
+}
+
+.banner .banner-inner .bottom1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 3%;
+}
+
+.banner .banner-inner .bottom1 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 3.9rem 0 0;
+}
+
+.banner .banner-inner .bottom1 p {
+  text-align: left;
+}
+
+.banner .bl-img {
+  display: none;
+}
+
+.banner .shape-down {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.second {
+  padding: 10% 5%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.second .second-inner {
+  position: relative;
+}
+
+.second .second-inner img {
+  position: relative;
+  z-index: 3;
+  margin: 0 auto;
+  display: block;
+  padding: 15%;
+}
+
+.second .second-inner .tr-img {
+  position: absolute;
+  top: -33px;
+  height: 42rem;
+  right: -84%;
+  z-index: -1;
+}
+
+.second .second-inner .bl-img {
+  display: none;
+}
+
+.second .second-inner:nth-child(2) {
+  padding-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.second .second-inner:nth-child(2) p {
+  margin-bottom: 2rem;
+  font: normal normal 600 17px/19px "Panton semibold";
+}
+
+.second .second-inner:nth-child(2) .bottom-p {
+  font: normal normal bold 14px/20px "Panton bold";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.services {
+  padding: 5% 0;
+  text-align: center;
+}
+
+.services .services-inner .p-top {
+  display: none;
+}
+
+.services .services-inner .p-top1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+  font: normal normal 600 17px/19px "Panton semibold";
+}
+
+.services .services-inner .p-top1 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.services .services-inner .p {
+  font: normal normal normal 14px/27px "Panton regular";
+}
+
+.services .services-inner .service-top h2 {
+  margin-bottom: 2rem;
+  font: normal normal 600 35px/69px "Panton semibold";
+}
+
+.services .services-inner .service-top p {
+  font: normal normal normal 13px/27px "Panton regular";
+  margin-bottom: 2rem;
+}
+
+.services .services-inner .service-top p a {
+  font-family: "Panton semibold";
+}
+
+.services .services-inner .service-top p img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.services .services-inner p {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-bottom: 3rem;
+  font-family: "Panton semibold";
+}
+
+.services .date .date-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem 0;
+  text-align: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services .date .date-inner h4 {
+  padding: 12px;
+  position: relative;
+  width: 50%;
+  font-size: 2rem;
+  text-transform: capitalize;
+  font: normal normal 600 20px/38px "Panton semibold";
+}
+
+.services .date .date-inner h4:before {
+  position: absolute;
+  width: 30%;
+  height: 4px;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background: #600C8F;
+  border-radius: 26px;
+}
+
+.services .date .date-inner .date-right {
+  width: 75%;
+  margin-left: auto;
+  padding-left: 3%;
+}
+
+.services .date .date-inner .date-right p {
+  margin-bottom: 0.3rem;
+  font: normal normal normal 15px/31px "Panton regular";
+}
+
+.services .bottom {
+  padding: 0 5%;
+}
+
+.services .service-last {
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  line-height: 1.3;
+  font: normal normal normal 17px/30px "Panton regular";
+}
+
+.services .service-last span {
+  font-family: "Panton semibold";
+  display: block;
+  margin-top: 2rem;
+}
+
+.team {
+  text-align: center;
+  padding: 10% 0 20%;
+  position: relative;
+}
+
+.team h2 {
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  font: normal normal 600 33px/48px "Panton semibold";
+}
+
+.team p {
+  line-height: 1.3;
+  margin-bottom: 2rem;
+  font: normal normal normal 18px/31px "Panton regular";
+  display: none;
+}
+
+.team .team-inner {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.team .team-inner .text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 25%;
+  color: white;
+  background: rgba(0, 0, 0, 0.419);
+  -webkit-transition: 700ms;
+  transition: 700ms;
+}
+
+.team .team-inner .text .text-inner {
+  text-align: left;
+  padding: 5%;
+}
+
+.team .team-inner .text .text-inner .name {
+  font: normal normal bold 15px/24px "Panton bold";
+  margin-bottom: 0;
+}
+
+.team .team-inner .text .text-inner span {
+  font: normal normal bold 15px/24px "Panton bold";
+  color: #CCCCCC;
+}
+
+.team .team-inner .text .text-inner i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 2rem;
+}
+
+.team .bon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team .bon p {
+  display: block;
+  font: normal normal bold 20px/33px "Panton bold";
+  text-transform: uppercase;
+}
+
+.team .bon span {
+  font: normal normal normal 39px/47px "Panton regular";
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.team {
+  overflow-x: hidden;
+}
+
+.team .slider {
+  width: 100%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.team .slider .slick-slide {
+  margin: 10px;
+  width: 100%;
+  height: 50px;
+  margin-top: 0px;
+}
+
+.team .slider .slick-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.team .slider .slick-current {
+  opacity: 1;
+  width: 260px;
+  height: 150px;
+  margin-top: 0;
+}
+
+.team .slick-slide {
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  opacity: .2;
+  width: 500px;
+  height: 300px;
+}
+
+.team .slick-active {
+  opacity: .5;
+}
+
+.subscribe {
+  padding: 10% 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe .br-img {
+  display: block;
+  position: absolute;
+  bottom: -31%;
+  right: -54%;
+  z-index: -1;
+}
+
+.subscribe .tl-img {
+  display: block;
+  position: absolute;
+  top: -7%;
+  left: -62%;
+  z-index: -1;
+}
+
+.subscribe .subscribe-inner {
+  padding: 5%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#600C8F), to(#370C79));
+  background: linear-gradient(to right, #600C8F, #370C79);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.subscribe .subscribe-inner i {
+  height: 7.5rem;
+  width: 7.5rem;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  background: -webkit-gradient(linear, left top, right top, from(#600C8F), to(#370C79));
+  background: linear-gradient(to right, #600C8F, #370C79);
+  -webkit-transform: translateY(-35px);
+          transform: translateY(-35px);
+  font-size: 3.5rem;
+}
+
+.subscribe .subscribe-inner h2 {
+  color: white;
+  font: normal normal 600 33px/40px "Panton semibold";
+}
+
+.subscribe .subscribe-inner p {
+  color: #DFDADA;
+  margin: 2rem 0;
+  font: normal normal normal 27px/32px "Panton regular";
+}
+
+.subscribe .subscribe-inner form label {
+  display: block;
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  text-align: left;
+  font: normal normal normal 18px/32px "Panton regular";
+  color: #FFFFFF;
+  display: none;
+}
+
+.subscribe .subscribe-inner form input {
+  text-align: center;
+  width: 100%;
+  border: none;
+  padding: 5px;
+  height: 5.3rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  font: normal normal normal 23px/31px "Panton regular";
+}
+
+.subscribe .subscribe-inner form a {
+  width: 13rem;
+  height: 4.6rem;
+  color: white;
+  border: 1px solid white;
+  display: block;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: normal normal 600 20px/27px "Panton semibold";
+  margin: auto;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#600C8F), to(#370C79));
+  background: linear-gradient(to right, #600C8F, #370C79);
+  color: white;
+  height: 7rem;
+  font: normal normal 600 18px/33px "Panton semibold";
+}
+
+.banner-offer, .banner-life, .banner-involved {
+  height: 100vh;
+  background: white;
+}
+
+.banner-offer .banner-inner, .banner-life .banner-inner, .banner-involved .banner-inner {
+  text-align: center;
+  padding: 5%;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.385)), to(rgba(0, 0, 0, 0.398))), url("../img/second.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.385), rgba(0, 0, 0, 0.398)), url("../img/second.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner-offer .banner-inner .shape-down, .banner-offer .banner-inner .shape-up, .banner-life .banner-inner .shape-down, .banner-life .banner-inner .shape-up, .banner-involved .banner-inner .shape-down, .banner-involved .banner-inner .shape-up {
+  display: none;
+}
+
+.banner-offer .banner-inner .banner-item h1, .banner-life .banner-inner .banner-item h1, .banner-involved .banner-inner .banner-item h1 {
+  margin-bottom: 2rem;
+  font: normal normal bold 40px/50px "Panton bold";
+}
+
+.banner-offer .banner-inner .banner-item p, .banner-life .banner-inner .banner-item p, .banner-involved .banner-inner .banner-item p {
+  margin-bottom: 2rem;
+  font: normal normal normal 16px/29px "Panton regular";
+  color: #F8F8F8;
+}
+
+.banner-offer .banner-inner .banner-item p a, .banner-life .banner-inner .banner-item p a, .banner-involved .banner-inner .banner-item p a {
+  color: #FFBB00;
+}
+
+.banner-offer .top-one, .banner-life .top-one, .banner-involved .top-one {
+  height: 50%;
+}
+
+.banner-offer .top-two, .banner-life .top-two, .banner-involved .top-two {
+  display: none;
+}
+
+.faith {
+  padding: 10% 5%;
+  text-align: center;
+}
+
+.faith .large-scr {
+  display: none;
+}
+
+.faith h2 {
+  margin-bottom: 2rem;
+  font: normal normal bold 28px/19px "Panton bold";
+}
+
+.faith p {
+  line-height: 1.3;
+  font: normal normal 600 15px/26px "Panton semibold";
+  color: #393838;
+}
+
+.ministry {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding: 5%;
+  overflow: hidden;
+}
+
+.ministry h2 {
+  font: normal normal 600 33px/70px "Panton semibold";
+}
+
+.ministry p {
+  font: normal normal 600 15px/26px "Panton semibold";
+}
+
+.ministry .ministry-pb {
+  font: normal normal bold 15px/26px "Panton bold";
+}
+
+.messy {
+  text-align: center;
+  padding: 5%;
+}
+
+.messy h2 {
+  font: normal normal 600 33px/70px "Panton semibold";
+}
+
+.messy p {
+  font: normal normal 600 15px/26px "Panton semibold";
+}
+
+.messy .ministry-pb {
+  font: normal normal bold 15px/30px "Panton bold";
+}
+
+.messy .rb-img {
+  display: none;
+}
+
+.advent {
+  padding: 5%;
+  text-align: center;
+  padding: 5%;
+}
+
+.advent h2 {
+  font: normal normal 600 33px/43px "Panton semibold";
+  margin-top: 2rem;
+}
+
+.advent p {
+  font: normal normal 600 15px/26px "Panton semibold";
+}
+
+.advent .ministry-pb {
+  font: normal normal bold 15px/30px "Panton bold";
+  margin-top: 2rem;
+}
+
+.advent .advent-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.advent h4 {
+  margin-bottom: 0;
+  font: normal normal normal 20px/32px "Panton regular";
+  color: #5D5D5D;
+}
+
+.life-inner, .involved {
+  text-align: center;
+}
+
+.life-inner h2, .involved h2 {
+  font: normal normal 600 28px/60px "Panton semibold";
+}
+
+.life-inner p, .involved p {
+  color: #393838;
+  font: normal normal 600 15px/25px "Panton semibold";
+  margin-bottom: 2rem;
+}
+
+.life-inner .life-inner-img, .involved .life-inner-img {
+  margin-bottom: 2rem;
+}
+
+.life-inner .life-bp, .involved .life-bp {
+  font: normal normal 600 18px/25px "Panton semibold";
+  padding: 5%;
+}
+
+.life-inner .involve-a, .involved .involve-a {
+  display: none;
+}
+
+.life-inner .involve-a1, .involved .involve-a1 {
+  text-align: center;
+  display: none;
+  margin: 1rem 0;
+  font: normal normal 600 20px/38px "Panton semibold";
+}
+
+.life-inner .involve-b, .involved .involve-b {
+  text-align: center;
+  display: block;
+  margin: 1rem 0;
+  font: normal normal 600 18px/38px "Panton semibold";
+}
+
+.life-inner .involved-bottom, .involved .involved-bottom {
+  position: relative;
+  width: 100%;
+  height: 23rem;
+}
+
+.life-inner .involved-bottom .bottom-involved, .involved .involved-bottom .bottom-involved {
+  width: 70%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.life-inner .involved-bottom .bottom-involved1, .involved .involved-bottom .bottom-involved1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70%;
+}
+
+.life-inner .baptism, .involved .baptism {
+  margin: 7rem 0;
+}
+
+.life-inner .wedding, .life-inner .funerals, .life-inner .outreach, .life-inner .fund, .involved .wedding, .involved .funerals, .involved .outreach, .involved .fund {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.involved {
+  padding: 5%;
+}
+
+.events {
+  text-align: center;
+}
+
+.events h2 {
+  font: normal normal 600 28px/30px "Panton semibold";
+}
+
+.events h2 span {
+  display: block;
+  font: normal normal 600 16px/2 "Panton semibold";
+}
+
+@media (min-width: 568px) {
+  .banner {
+    padding: 3%;
+    height: auto;
+  }
+  .team .team-inner {
+    margin-bottom: 3rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .banner-offer, .banner-life, .banner-involved {
+    height: auto;
+  }
+  .second .second-inner:nth-child(2) .bottom-p {
+    font-size: 18px;
+  }
+  .second .second-inner .tr-img {
+    height: 47rem;
+    right: -48%;
+  }
+  .services {
+    padding: 5% 0;
+    text-align: center;
+  }
+  .services .services-inner .service-top p {
+    font-size: 18px;
+  }
+  .services .date .date-inner .date-right {
+    width: 50%;
+  }
+  .services .date .date-inner .date-right p {
+    font-size: 1.8rem;
+  }
+  .subscribe .subscribe-inner h2 {
+    font-size: 3rem;
+  }
+  .subscribe .tl-img {
+    left: -20%;
+  }
+  .subscribe .br-img {
+    right: -25%;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-top: 135px;
+  }
+  .banner .top-text {
+    display: none;
+  }
+  .banner .banner-inner {
+    width: 50%;
+    position: relative;
+  }
+  .banner .banner-inner .bottom {
+    display: block;
+  }
+  .banner .banner-inner .bottom1 {
+    display: none;
+  }
+  .banner .banner-inner h1 {
+    color: white;
+    margin-bottom: 3rem;
+  }
+  .banner .banner-inner img {
+    position: relative;
+    z-index: 2;
+  }
+  .banner .banner-inner p {
+    color: #D3D3D3;
+    font-size: 2rem;
+  }
+  .banner .banner-inner:first-child {
+    padding: 3%;
+  }
+  .banner .banner-inner .bl-img {
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    left: -15px;
+    z-index: 1;
+  }
+  .second {
+    padding: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
+  .second .second-inner {
+    width: 50%;
+    padding: 1%;
+  }
+  .second .second-inner img {
+    padding: 5%;
+  }
+  .second .second-inner .tr-img {
+    height: 22rem;
+    right: -80px;
+  }
+  .second .second-inner:nth-child(2) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .second .second-inner:nth-child(2) p {
+    font-size: 1.5rem;
+  }
+  .second .second-inner:nth-child(2) .bottom-p {
+    font-size: 1.38rem;
+  }
+  .services {
+    text-align: left;
+  }
+  .services .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+  .services .services-inner {
+    position: relative;
+    height: 100%;
+  }
+  .services .services-inner .p-top {
+    display: block;
+  }
+  .services .services-inner .p-top1 {
+    display: none;
+  }
+  .services .services-inner .service-top h2 {
+    margin-bottom: 1rem;
+    font-size: 4.8rem;
+  }
+  .services .services-inner .service-top p {
+    margin-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1.3rem;
+  }
+  .services .services-inner .service-top p img {
+    display: unset;
+    margin: 0;
+    margin-right: .5rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .services .services-inner p {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+  }
+  .services .services-inner p a {
+    margin-left: .3rem;
+  }
+  .services .img {
+    width: -webkit-fill-available;
+  }
+  .services .date .date-inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .services .date .date-inner h4:before {
+    width: 4px;
+    height: 100%;
+  }
+  .services .date .date-inner .date-right {
+    font-size: 1.2rem;
+    width: 34rem;
+  }
+  .services .bottom {
+    padding: 0;
+  }
+  .services .service-last {
+    font-size: 1.5rem;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    text-align: center;
+  }
+  .services .service-last span {
+    display: block;
+    font-weight: bold;
+  }
+  .team {
+    padding: 5% 0;
+  }
+  .team h2 {
+    font-size: 4.8rem;
+  }
+  .team p {
+    display: block;
+  }
+  .team .team-inner .text {
+    height: 29%;
+  }
+  .team .team-inner .text .text-inner .name {
+    font-size: 1.3rem;
+  }
+  .subscribe {
+    position: relative;
+    overflow: hidden;
+  }
+  .subscribe .subscribe-inner {
+    width: 75%;
+    margin: 0 auto;
+  }
+  .subscribe .subscribe-inner h2 {
+    font-size: 3.5rem;
+  }
+  .subscribe .subscribe-inner p {
+    margin: 2rem 0;
+    font-size: 2.5rem;
+  }
+  .subscribe .subscribe-inner i {
+    -webkit-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+  .subscribe .subscribe-inner form label {
+    text-align: left;
+  }
+  footer {
+    font-size: 2.4rem;
+    height: 12rem;
+  }
+  .banner-offer, .banner-life, .banner-involved {
+    padding: 20% 0 10%;
+  }
+  .banner-offer .banner-inner, .banner-life .banner-inner, .banner-involved .banner-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.385)), to(rgba(0, 0, 0, 0.398))), url("../img/banner-offer.png");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.385), rgba(0, 0, 0, 0.398)), url("../img/banner-offer.png");
+    background-size: cover;
+    background-position: center center;
+  }
+  .banner-offer .banner-inner .banner-item, .banner-life .banner-inner .banner-item, .banner-involved .banner-inner .banner-item {
+    width: 50%;
+  }
+  .banner-offer .banner-inner .shape-up, .banner-life .banner-inner .shape-up, .banner-involved .banner-inner .shape-up {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+  }
+  .banner-offer .banner-inner .shape-down, .banner-life .banner-inner .shape-down, .banner-involved .banner-inner .shape-down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+  }
+  .banner-offer .top-one, .banner-life .top-one, .banner-involved .top-one {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 0;
+    height: 30rem;
+    padding: 3%;
+  }
+  .faith {
+    padding: 5%;
+    text-align: left;
+  }
+  .faith .large-scr {
+    display: block;
+  }
+  .faith .small-scr {
+    display: none;
+  }
+  .faith h2 {
+    font-size: 4.8rem;
+    margin-bottom: 3.1rem;
+  }
+  .faith p {
+    font-size: 2.1rem;
+    line-height: 1.3;
+  }
+  .ministry {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .ministry .min-left {
+    width: 60%;
+  }
+  .ministry .min-right {
+    width: 35%;
+  }
+  .messy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .messy .messy-left {
+    width: 35%;
+  }
+  .messy .messy-right {
+    width: 60%;
+  }
+  .advent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .advent .advent-left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 35%;
+  }
+  .advent .advent-right {
+    width: 60%;
+    text-align: left;
+  }
+  .advent .ministry-pb {
+    font: normal normal bold 16px/31px "Panton bold";
+  }
+  .advent h4 {
+    text-align: left;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .life-inner h2, .involved h2 {
+    font: normal normal 600 39px/48px "Panton semibold";
+  }
+  .life-inner p, .involved p {
+    font: normal normal 600 18px/31px "Panton semibold";
+    margin-bottom: 2rem;
+  }
+  .life-inner .involved-bottom .bottom-involved, .involved .involved-bottom .bottom-involved {
+    position: absolute;
+    top: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .life-inner .involved-bottom .bottom-involved1, .involved .involved-bottom .bottom-involved1 {
+    position: absolute;
+    bottom: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .life-inner .confirm, .life-inner .wedding, .life-inner .baptism, .life-inner .funerals, .involved .confirm, .involved .wedding, .involved .baptism, .involved .funerals {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .life-inner .confirm .text, .life-inner .wedding .text, .life-inner .baptism .text, .life-inner .funerals .text, .involved .confirm .text, .involved .wedding .text, .involved .baptism .text, .involved .funerals .text {
+    width: 58%;
+    text-align: left;
+    margin: auto 0;
+  }
+  .life-inner .confirm img, .life-inner .wedding img, .life-inner .baptism img, .life-inner .funerals img, .involved .confirm img, .involved .wedding img, .involved .baptism img, .involved .funerals img {
+    width: 38%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .life-inner .involve-a, .involved .involve-a {
+    display: block;
+    font: normal normal 600 18px/38px "Panton semibold";
+  }
+  .life-inner .involve-b, .involved .involve-b {
+    display: none;
+  }
+  .life-inner .outreach, .life-inner .fund, .life-inner .care, .involved .outreach, .involved .fund, .involved .care {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .life-inner .outreach .text, .life-inner .fund .text, .life-inner .care .text, .involved .outreach .text, .involved .fund .text, .involved .care .text {
+    width: 58%;
+    margin: auto 0;
+    text-align: left;
+  }
+  .life-inner .outreach .out-inner, .life-inner .outreach .fund-inner, .life-inner .outreach .care-inner, .life-inner .fund .out-inner, .life-inner .fund .fund-inner, .life-inner .fund .care-inner, .life-inner .care .out-inner, .life-inner .care .fund-inner, .life-inner .care .care-inner, .involved .outreach .out-inner, .involved .outreach .fund-inner, .involved .outreach .care-inner, .involved .fund .out-inner, .involved .fund .fund-inner, .involved .fund .care-inner, .involved .care .out-inner, .involved .care .fund-inner, .involved .care .care-inner {
+    width: 40%;
+    margin: auto 0;
+  }
+  .life-inner .care .involve-b, .involved .care .involve-b {
+    display: block;
+    line-height: 0;
+  }
+  .life-inner .general, .involved .general {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 3rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .life-inner .general .general-inner, .involved .general .general-inner {
+    width: 48%;
+  }
+  .life-inner .general .text, .involved .general .text {
+    width: 48%;
+    margin: auto 0;
+    text-align: left;
+  }
+  .life-inner .general .bottom-involved, .involved .general .bottom-involved {
+    bottom: unset;
+    top: 0;
+    width: 85%;
+  }
+  .life-inner .general .bottom-involved1, .involved .general .bottom-involved1 {
+    top: unset;
+    bottom: 0;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner .banner-inner .tr-img {
+    left: unset;
+    right: 15px;
+  }
+  .banner .banner-inner .top-text {
+    display: none;
+  }
+  .banner .banner-inner h1 {
+    font-size: 4.9rem;
+  }
+  .banner .banner-inner p {
+    font-size: 2.1rem;
+    width: 26.2rem;
+    display: block;
+    margin: 0 auto;
+  }
+  .banner .banner-inner .bl-img {
+    bottom: -46px;
+    left: -42px;
+    z-index: 1;
+  }
+  .second {
+    padding: 10% 5%;
+  }
+  .second .second-inner .tr-img {
+    position: absolute;
+    top: -35px;
+    right: 0%;
+    z-index: 1;
+    height: 29rem;
+  }
+  .second .second-inner .bl-img {
+    display: block;
+    position: absolute;
+    bottom: -18px;
+    left: -3%;
+    z-index: 1;
+  }
+  .second .second-inner:nth-child(2) {
+    margin: auto;
+  }
+  .second .second-inner:nth-child(2) p {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+  .second .second-inner:nth-child(2) .bottom-p {
+    font-size: 1.84rem;
+  }
+  .services {
+    text-align: left;
+  }
+  .services img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .services .services-inner .service-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .services .services-inner .service-top h2 {
+    margin-right: 2rem;
+  }
+  .services .services-inner .service-top p {
+    font-size: 1.6rem;
+    margin: auto;
+  }
+  .services .services-inner .service-top p img {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .services .date .date-inner .date-right {
+    width: 20rem;
+  }
+  .services .date .date-inner .date-right p {
+    font-size: 1.3rem;
+  }
+  .services .service-last {
+    font-size: 1.9rem;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .subscribe {
+    padding: 5%;
+  }
+  .subscribe .br-img {
+    right: -12%;
+    bottom: 0;
+  }
+  .subscribe .tl-img {
+    left: -11%;
+    top: 0;
+  }
+  .subscribe .subscribe-inner i {
+    height: 7.6rem;
+    width: 7.6rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    background: -webkit-gradient(linear, left top, right top, from(#600C8F), to(#370C79));
+    background: linear-gradient(to right, #600C8F, #370C79);
+    -webkit-transform: translateY(-75px);
+            transform: translateY(-75px);
+    font-size: 3.2rem;
+  }
+  .subscribe .subscribe-inner h2 {
+    font-size: 3rem;
+    color: white;
+  }
+  .subscribe .subscribe-inner p {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .subscribe .subscribe-inner form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .subscribe .subscribe-inner form label {
+    width: 100%;
+  }
+  .subscribe .subscribe-inner form input {
+    width: 75%;
+  }
+  .subscribe .subscribe-inner form a {
+    width: 23%;
+  }
+  .ministry h2, .messy h2, .advent h2 {
+    font: normal normal 600 39px/122px "Panton semibold";
+  }
+  .ministry p, .messy p, .advent p {
+    font: normal normal 600 22px/31px "Panton semibold";
+  }
+  .ministry .ministry-pb, .messy .ministry-pb, .advent .ministry-pb {
+    font: normal normal bold 22px/31px "Panton bold";
+  }
+  .banner-offer .top-one, .banner-life .top-one, .banner-involved .top-one {
+    right: 20%;
+    top: -7rem;
+    z-index: 2;
+    border-radius: 4px;
+    padding: 0;
+  }
+  .banner-offer .top-two, .banner-life .top-two, .banner-involved .top-two {
+    display: block;
+    position: absolute;
+    height: 30rem;
+    right: 4%;
+    top: 9rem;
+    z-index: 1;
+    border-radius: 4px;
+  }
+  .banner-offer .banner-inner .banner-item p, .banner-life .banner-inner .banner-item p, .banner-involved .banner-inner .banner-item p {
+    font-size: 2.1rem;
+    width: 35rem;
+  }
+  .banner-offer .banner-inner .banner-item p a, .banner-life .banner-inner .banner-item p a, .banner-involved .banner-inner .banner-item p a {
+    color: #FFBB00;
+  }
+  .banner-offer .banner-inner .top-two, .banner-life .banner-inner .top-two, .banner-involved .banner-inner .top-two {
+    display: block;
+    position: absolute;
+    height: 30rem;
+    right: 4%;
+    top: 9rem;
+    z-index: 1;
+    border-radius: 4px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner .banner-inner:first-child {
+    width: 40%;
+  }
+  .banner .banner-inner:nth-child(2) {
+    width: 60%;
+  }
+  .banner .banner-inner h1 {
+    font-size: 4.9rem;
+    width: 44.8rem;
+    display: block;
+    margin: 0 auto 10rem;
+    line-height: initial;
+  }
+  .banner .banner-inner .tr-img {
+    right: -14rem;
+    left: unset;
+  }
+  .banner .banner-inner .bl-img {
+    left: -49px;
+  }
+  .second {
+    padding: 5%;
+  }
+  .second .second-inner {
+    width: 40%;
+  }
+  .second .second-inner .tr-img {
+    right: 7%;
+  }
+  .second .second-inner .bl-img {
+    left: 1%;
+    bottom: -38px;
+  }
+  .second .second-inner:nth-child(2) {
+    margin: auto;
+    width: 60%;
+  }
+  .second .second-inner:nth-child(2) p {
+    font: normal normal 600 24px/38px "Panton semibold";
+    margin-bottom: 5rem;
+  }
+  .second .second-inner:nth-child(2) .bottom-p {
+    font: normal normal bold 29px/47px "Panton bold";
+  }
+  .services .services-inner .service-top h2 {
+    font-size: 4.8rem;
+    margin-bottom: 2rem;
+  }
+  .services .services-inner .service-top p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  .services .services-inner .service-top p img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .services .services-inner p {
+    font-size: 2.4rem;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+  }
+  .services .date .date-inner h4 {
+    font-size: 2.4rem;
+    width: 15rem;
+  }
+  .services .date .date-inner .date-right {
+    width: 23rem;
+    padding-left: 0;
+  }
+  .services .date .date-inner .date-right p {
+    font-size: 1.9rem;
+  }
+  .services .bottom {
+    margin-top: 3rem;
+    padding: 0 3%;
+  }
+  .services .service-last {
+    font-size: 2.4rem;
+    text-align: left;
+  }
+  .team p {
+    font-size: 2.4rem;
+    padding: 0 4%;
+  }
+  .team .team-inner .text {
+    height: 22%;
+  }
+  .team .team-inner .text .text-inner p {
+    padding: 0;
+  }
+  .team .team-inner .text .text-inner span, .team .team-inner .text .text-inner .name {
+    font-size: 2rem;
+  }
+  .subscribe .subscribe-inner {
+    height: 34.5rem;
+    padding: 0 5%;
+    width: 72.6rem;
+  }
+  .subscribe .subscribe-inner i {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px);
+  }
+  .subscribe .subscribe-inner h2 {
+    font-size: 4.3rem;
+  }
+  .subscribe .subscribe-inner p {
+    font-size: 3.3rem;
+    margin: 0.6rem 0 3.9rem;
+  }
+  .subscribe .subscribe-inner form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .subscribe .subscribe-inner form label {
+    font-size: 2.7rem;
+    margin-bottom: 0.9rem;
+  }
+  .subscribe .subscribe-inner form input {
+    height: 5.3rem;
+    width: 43.9rem;
+    padding: 1.2rem 0 1rem 1.9rem;
+    font-size: 2.5rem;
+  }
+  .subscribe .subscribe-inner form a {
+    height: 5.3rem;
+    width: 13rem;
+    font-size: 2.2rem;
+  }
+  footer {
+    font-size: 2.8rem;
+  }
+  .banner-offer, .banner-life, .banner-involved {
+    padding: 12% 0 10%;
+  }
+  .banner-offer .banner-inner .banner-item, .banner-life .banner-inner .banner-item, .banner-involved .banner-inner .banner-item {
+    margin: 5rem 0;
+    width: 35%;
+  }
+  .banner-offer .banner-inner .banner-item h1, .banner-life .banner-inner .banner-item h1, .banner-involved .banner-inner .banner-item h1 {
+    font-size: 5.5rem;
+  }
+  .banner-offer .top-one, .banner-life .top-one, .banner-involved .top-one {
+    right: 20%;
+    height: 37rem;
+    top: -4rem;
+  }
+  .banner-offer .top-two, .banner-life .top-two, .banner-involved .top-two {
+    right: 7%;
+    height: 37rem;
+    top: 17rem;
+  }
+  .ministry, .messy, .advent {
+    margin: 5% 0;
+    padding: 0 8%;
+  }
+  .ministry img, .messy img, .advent img {
+    width: -webkit-fill-available;
+  }
+  .ministry .side-img, .messy .side-img, .advent .side-img {
+    position: unset;
+    top: unset;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .ministry .min-left {
+    position: relative;
+    padding-right: 5%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin: auto 0;
+    padding-bottom: 4%;
+  }
+  .ministry .min-left:before {
+    height: 90%;
+    width: 3px;
+    background: #600C8F;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    content: "";
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .messy .messy-right, .messy .advent-right, .advent .messy-right, .advent .advent-right {
+    position: relative;
+    padding-left: 5%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin: auto 0;
+    padding-bottom: 4%;
+  }
+  .messy .messy-right:before, .messy .advent-right:before, .advent .messy-right:before, .advent .advent-right:before {
+    height: 90%;
+    width: 3px;
+    background: #600C8F;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    content: "";
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .life-inner p {
+    font-size: 2.1rem;
+  }
+  .life-inner .confirm, .life-inner .wedding, .life-inner .baptism, .life-inner .funerals {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .life-inner .confirm .text, .life-inner .wedding .text, .life-inner .baptism .text, .life-inner .funerals .text {
+    width: 70%;
+  }
+  .life-inner .confirm img, .life-inner .wedding img, .life-inner .baptism img, .life-inner .funerals img {
+    width: 28%;
+  }
+  .life-inner .life-bp {
+    font-size: 2.1rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .involved h2 {
+    font: normal normal 600 38px/69px "Panton semibold";
+  }
+  .involved p {
+    font: normal normal 600 22px/38px "Panton semibold";
+    margin-bottom: 2rem;
+  }
+  .involved .involve-b, .involved .involve-a {
+    font-size: 2rem;
+  }
+  .involved .involve-a1 {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -16%;
+  }
+  .involved .involved-bottom .bottom-involved {
+    width: 75%;
+  }
+  .involved .care .text {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    position: relative;
+  }
+  .involved .care .text p {
+    margin-bottom: 0;
+  }
+  .involved .care .text a {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .involved .general .bottom-involved1 {
+    bottom: -20%;
+    width: 35%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
